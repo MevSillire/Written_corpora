@@ -11,6 +11,8 @@ def load_file():
     long=[]
     for sent in phrase:
         long.append(len(sent))
+        
+    #long=[len(sent) for sent in phrase]
 
     longueur_moy_phrase = np.mean(long)
     max_phrase = max(long)
