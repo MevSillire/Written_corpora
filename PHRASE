@@ -4,7 +4,7 @@ import numpy as np
 
 def load_file():
     """load the txt file"""
-    story = open("C:/Users/maeva/AppData/Roaming/JetBrains/PyCharmCE2020.2/scratches/abel_a_perdu_son_doudou.txt", encoding="utf8")
+    story = open("file.txt", encoding="utf8")
 
     sto = story.read()
     phrase = re.split("\.|\?|\!", sto)
