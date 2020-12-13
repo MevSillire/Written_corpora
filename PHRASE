@@ -1,0 +1,19 @@
+import re
+import numpy as np
+
+
+def load_file():
+    """load the txt file"""
+    story = open("C:/Users/maeva/AppData/Roaming/JetBrains/PyCharmCE2020.2/scratches/abel_a_perdu_son_doudou.txt", encoding="utf8")
+
+    sto = story.read()
+    phrase = re.split("\.|\?|\!", sto)
+    long=[]
+    for sent in phrase:
+        long.append(len(sent))
+
+    longueur_moy_phrase = np.mean(long)
+    max_phrase = max(long)
+    print("long moyenne:", longueur_moy_phrase,"longueur phrase maximale:", max_phrase)
+
+load_file()
